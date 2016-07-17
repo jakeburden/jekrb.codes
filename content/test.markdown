@@ -4,4 +4,4 @@
 
 some content
 asdafs
-content *af* _right_ now
+content *af* __right__ now
