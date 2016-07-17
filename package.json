@@ -16,6 +16,7 @@
     "patterns": "^1.0.2",
     "st": "^1.2.0",
     "through": "^2.3.8",
+    "through2": "^2.0.1",
     "trumpet": "^1.7.2"
   },
   "devDependencies": {

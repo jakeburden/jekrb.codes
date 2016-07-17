@@ -7,3 +7,4 @@ module.exports = (routes, serve)  => (req, res) => {
     fn(req, res)
   } else serve(req, res)
 }
+
