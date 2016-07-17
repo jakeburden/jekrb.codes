@@ -10,7 +10,6 @@
   "author": "Jacob Burden <Jacob.JW.Burden@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "level": "^1.4.0",
     "marked": "^0.3.5",
     "oppressor": "0.0.1",
     "patterns": "^1.0.2",

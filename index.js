@@ -5,7 +5,6 @@ const st = require('st')
 const trumpet = require('trumpet')
 const routes = require('patterns')()
 const marked = require('marked')
-const level = require('level')
 const oppressor = require('oppressor')
 const through = require('through2')
 
@@ -35,6 +34,6 @@ routes.add('GET /', (req, res) => {
   
   markdown.pipe(entry)
   
-  root.pipe(tr).pipe(res)
+  root.pipe(tr).pipe(oppressor(req)).pipe(res)
 })
 
