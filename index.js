@@ -10,7 +10,7 @@ const through = require('through2')
 const split = require('split2')
 
 const serve = st({
-  path: 'browser/dist'
+  path: 'dist/'
 })
 
 const createRoutes = require('./createRoutes')(routes, serve)
@@ -30,7 +30,7 @@ function render (page) {
     
     const tr = trumpet()
     const entry = tr.select('#content').createWriteStream()
-    const markdown = content.pipe(split()).pipe(through(function (buf, enc, cb) {
+    const markdown = content.pipe(through(function (buf, enc, cb) {
       const markup = marked(buf.toString())
       this.push(markup)
       cb()
