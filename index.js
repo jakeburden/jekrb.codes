@@ -20,8 +20,8 @@ http.createServer(createRoutes).listen(9090, () => {
 })
 
 
-
-routes.add('GET /', render('test'))
+// routes.add('GET /blog/{name}', render('test'))
+routes.add('GET /{maybeQuery}?', render('test'))
 
 function render (page) {
   return function (req, res) {
